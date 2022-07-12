@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="push2021notificaton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="lyt-As-j6s">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-9S-AlM">
+                                        <rect key="frame" x="5" y="0.0" width="404" height="199.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v4v-Ie-fnF">
+                                        <rect key="frame" x="5" y="206.5" width="404" height="199"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Pa-ZX-8NR">
+                                        <rect key="frame" x="5" y="412.5" width="404" height="199.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gDu-Dt-7Oc">
+                                        <rect key="frame" x="5" y="619" width="404" height="199"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BmA-9S-AlM" firstAttribute="leading" secondItem="lyt-As-j6s" secondAttribute="leading" constant="5" id="4Wa-Zp-0fH"/>
+                                    <constraint firstAttribute="trailing" secondItem="gDu-Dt-7Oc" secondAttribute="trailing" constant="5" id="6Lj-tG-AAP"/>
+                                    <constraint firstAttribute="trailing" secondItem="BmA-9S-AlM" secondAttribute="trailing" constant="5" id="Ey6-23-JQD"/>
+                                    <constraint firstItem="gDu-Dt-7Oc" firstAttribute="leading" secondItem="lyt-As-j6s" secondAttribute="leading" constant="5" id="KwD-e8-mEp"/>
+                                    <constraint firstItem="v4v-Ie-fnF" firstAttribute="leading" secondItem="lyt-As-j6s" secondAttribute="leading" constant="5" id="Qft-iw-GfO"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Pa-ZX-8NR" secondAttribute="trailing" constant="5" id="Xpv-U0-dua"/>
+                                    <constraint firstAttribute="trailing" secondItem="v4v-Ie-fnF" secondAttribute="trailing" constant="5" id="ds3-ya-GLI"/>
+                                    <constraint firstItem="8Pa-ZX-8NR" firstAttribute="leading" secondItem="lyt-As-j6s" secondAttribute="leading" constant="5" id="iHf-nd-OpC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="lyt-As-j6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="233-4k-8A5"/>
+                            <constraint firstItem="lyt-As-j6s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cxx-PA-HaA"/>
+                            <constraint firstAttribute="bottom" secondItem="lyt-As-j6s" secondAttribute="bottom" constant="34" id="JTs-cW-4nv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lyt-As-j6s" secondAttribute="trailing" id="xqZ-7u-X7L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="texttoken" destination="BmA-9S-AlM" id="NZh-E0-Ram"/>
+                        <outlet property="texttoken2nd" destination="v4v-Ie-fnF" id="jox-sf-qHJ"/>
+                        <outlet property="texttoken3rd" destination="8Pa-ZX-8NR" id="V9G-fL-ach"/>
+                        <outlet property="texttoken4th" destination="gDu-Dt-7Oc" id="DLM-nO-jCa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.36231884057972" y="-837.05357142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
